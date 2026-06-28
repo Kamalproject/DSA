@@ -1,0 +1,11 @@
+arr1=list(map(int,input("Enter array1 ").split(" ")))
+arr2=list(map(int,input("Enter array2 ").split(" ")))
+flag=0
+for i in range(0,len(arr1)):
+  for j in range(0,len(arr2)):
+    if arr2[j]==arr1[i]:
+      flag=1
+if(flag==1):
+  print(True)
+else:
+  print(False)
